@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smart Login - Signup</title>
+    <link rel="stylesheet" href="./CSS/all.min.css" />
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css" />
+    <link rel="stylesheet" href="./CSS/style.css" />
+  </head>
+  <body>
+    <main class="page-main-color min-vh-100 overflow-hidden">
+      <div class="inputs-box w-75 mx-auto my-5 p-5 text-center">
+        <h1 class="text-info mb-3">Smart Login System</h1>
+        <input
+          id="signUpName"
+          type="text"
+          class="form-control mb-3"
+          placeholder="Enter your name"
+        />
+        <p id="invalidSignUpName" class="d-none text-danger text-start">
+          Name must start with capital char and be (5-20) chars with no numbers
+          or special chars
+        </p>
+        <input
+          id="signUpEmail"
+          type="email"
+          class="form-control mb-3"
+          placeholder="Enter your email"
+        />
+        <p id="invalidSignUpEmail" class="d-none text-danger text-start">
+          Invalid email adress
+        </p>
+        <p id="repeatedSignUpEmail" class="d-none text-danger text-start">
+          This email is already exist
+        </p>
+        <input
+          id="signUpPassword"
+          type="password"
+          class="form-control mb-3"
+          placeholder="Enter your password"
+        />
+        <div id="invalidSignUpPassword" class="d-none text-danger text-start">
+          <p>Password must be :</p>
+          <ul>
+            <li>(8 - 15) chars</li>
+            <li>at least one lowercase letter</li>
+            <li>at least one uppercase letter</li>
+            <li>at least one numeric digit</li>
+            <li>at least one special char</li>
+          </ul>
+        </div>
+        <button id="signUpBtn" class="btn btn-outline-info w-100 py-2 my-4">
+          Sign Up
+        </button>
+        <p class="text-white fw-bold fs-6">
+          You have an account ?
+          <a href="./index.html" class="text-decoration-none">Signin</a>
+        </p>
+      </div>
+    </main>
+    <script src="./Scripts/all.min.js"></script>
+    <script src="./Scripts/bootstrap.bundle.min.js"></script>
+    <script src="./Scripts/signUp.js"></script>
+  </body>
+</html>

@@ -1,0 +1,11 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.page-main-color {
+  background-color: #24353f;
+}
+
+.inputs-box {
+  box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+}
